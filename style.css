@@ -18,18 +18,15 @@ header {
 header h1 {
   color: #ffffff;
 }
+@media screen and (min-width: 750px) {
+  header h1 {
+    order: -1;
+  }
+}
 header div.header_container {
   display: flex;
   align-items: center;
   gap: 20px;
-}
-header div.header_container h1 {
-  color: #ffffff;
-}
-@media screen and (min-width: 750px) {
-  header div.header_container h1 {
-    order: -1;
-  }
 }
 header div.header_container nav {
   position: relative;
@@ -69,4 +66,89 @@ header div.header_container nav ul.mobile_ver a {
 }
 header svg.burger_menu:hover ~ ul.mobile_ver {
   display: block;
+}
+
+.first {
+  height: 510px;
+  width: 100%;
+  background-color: #101010;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.first .texts {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  text-align: center;
+  gap: 24px;
+  align-items: center;
+}
+@media screen and (min-width: 750px) {
+  .first .texts {
+    width: 100%;
+  }
+}
+.first .texts h3 {
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 10px;
+  color: #ffffff;
+  opacity: 49%;
+}
+.first .texts h2 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 40px;
+  letter-spacing: 1.29px;
+}
+.first .texts p.exprience {
+  font-size: 15px;
+  font-weight: 400;
+  color: #ffffff;
+  opacity: 75%;
+}
+.first .texts button {
+  background-color: #d87d4a;
+  width: 160px;
+  height: 48px;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 13px;
+  border: none;
+}
+
+.second {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.second .card {
+  width: 327px;
+  height: 165px;
+  background-color: #f1f1f1;
+  position: relative;
+  padding-top: 88px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 92px;
+}
+.second .card img {
+  width: 80px;
+  height: 104px;
+  position: absolute;
+  bottom: 100px;
+}
+.second .card h4 {
+  margin-bottom: 17px;
+}
+.second .card li {
+  list-style: none;
+}
+.second .card li a {
+  text-decoration: none;
+  color: #000000;
+  opacity: 50%;
 }/*# sourceMappingURL=style.css.map */
