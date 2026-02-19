@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
+}
+
+header {
+  height: 90px;
+  background-color: #101010;
+  justify-content: space-between;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #2c2c2c;
+}
+header h1 {
+  color: #ffffff;
+}
+header div.header_container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+header div.header_container h1 {
+  color: #ffffff;
+}
+@media screen and (min-width: 750px) {
+  header div.header_container h1 {
+    order: -1;
+  }
+}
+header div.header_container nav {
+  position: relative;
+}
+header div.header_container nav ul.desktop_ver {
+  display: none;
+  list-style: none;
+  gap: 34px;
+}
+header div.header_container nav ul.desktop_ver a {
+  color: #ffffff;
+  text-decoration: none;
+}
+@media screen and (min-width: 750px) {
+  header div.header_container nav ul.desktop_ver {
+    display: flex;
+  }
+}
+header div.header_container nav ul.mobile_ver {
+  display: none;
+  position: absolute;
+  top: 18px;
+  background-color: #fafafa;
+  list-style: none;
+}
+header div.header_container nav ul.mobile_ver:hover {
+  display: block;
+}
+header div.header_container nav ul.mobile_ver a {
+  text-decoration: none;
+  color: #101010;
+}
+@media screen and (min-width: 750px) {
+  header svg.burger_menu {
+    display: none;
+  }
+}
+header svg.burger_menu:hover ~ ul.mobile_ver {
+  display: block;
+}/*# sourceMappingURL=style.css.map */
